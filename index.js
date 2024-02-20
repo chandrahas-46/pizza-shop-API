@@ -1,6 +1,6 @@
 // 1. Import libraries
 import './env.js';
-import cors from 'cors';
+// import cors from 'cors';
 import express from "express";
 import { connectToDB } from './src/config/mongooseConfig.js';
 
@@ -9,7 +9,7 @@ import productRouter from './src/products/product.routes.js';
 // 2. create server
 const server = express();
 // CORS
-server.use(cors());
+// server.use(cors());
 
 const PORT = process.env.PORT || 3000;
 server.use(express.json());
