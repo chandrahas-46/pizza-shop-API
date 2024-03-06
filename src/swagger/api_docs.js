@@ -20,14 +20,14 @@ export const apiDocumentation = {
     },
     servers: [
         {
+            url: process.env.HOST_URL,
+            description: "Production Server",
+        },
+        {
             // url: "http://localhost:3000",
             url: process.env.BASE_URL,
             description: "Local Server"
         },
-        // {
-        //     url: "https://api.mysite.com",
-        //     description: "Production Server",
-        // },
     ],
     "components": {
         "securitySchemes": {
